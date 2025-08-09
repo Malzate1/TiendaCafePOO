@@ -1,6 +1,6 @@
 package com.example;
 
-public class Main {
+public class Tienda {
     public static void main(String[] args) {
         Cafe cafe1 = new Cafe("Parce", "Antioquia", 30000, 2);
         Cafe cafe2 = new Cafe("Cuyabro", "Eje cafetero", 25000, 1);

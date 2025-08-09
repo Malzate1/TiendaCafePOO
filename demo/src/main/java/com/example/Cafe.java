@@ -34,5 +34,25 @@ public class Cafe {
         System.out.println("Nueva cantidad en Kilos: "+nuevacantidad);
     }
 
+    public double aplicarDescuento(double porcentaje){
+
+        if (porcentaje <0 || porcentaje >100 ){
+
+            System.out.println(" El porcentaje esta fuera de rango.Debe estar entre 0 Y 100. ");
+            return this.precioPorKilo;
+
+        }
+
+        double precioInicial= this.precioPorKilo;
+        double descuento= this.precioPorKilo*(porcentaje/100);
+        this.precioPorKilo=this.precioPorKilo-descuento;
+
+        return this.precioPorKilo;
+
+
+
+
+    }
+
 
 }
